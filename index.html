@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Enjel Ayuti Napitupulu | Sistem Informasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================
+       HEADER + NAVIGASI
+       ====================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="logo">Enjel Ayuti Napitupulu</span>
+      <nav aria-label="Navigasi utama">
+        <ul class="main-nav">
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================================================
+         SECTION 1: TENTANG SAYA (Hero + Profile)
+         ====================================================== -->
+    <section id="tentang" class="section hero-section">
+      <div class="container hero-layout">
+
+        <article class="profile-card">
+          <div class="card-banner"></div>
+
+          <div class="card-body">
+            <div class="avatar-wrap">
+              <img
+                src="photo.jpeg"
+                alt="Foto profil Enjel Ayuti Napitupulu"
+                class="avatar-img">
+              <span class="status-badge">Aktif</span>
+            </div>
+
+            <h1 class="profile-name">Enjel Ayuti Napitupulu</h1>
+            <p class="profile-role">Mahasiswa S1 Sistem Informasi &mdash; Web Developer</p>
+            <p class="profile-bio">
+              Antusias merancang antarmuka web yang bersih, semantik, dan mudah diakses
+              oleh semua pengguna, termasuk pengguna pembaca layar.
+            </p>
+
+            <h2 class="sub-heading">Keahlian</h2>
+            <ul class="skills-badges">
+              <li>HTML5 Semantic</li>
+              <li>Modern CSS</li>
+              <li>Flexbox &amp; Grid</li>
+              <li>Aksesibilitas (WCAG)</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+
+            <div class="profile-actions">
+              <a href="#kontak" class="btn btn-primary">Hubungi Saya</a>
+              <a href="#portofolio" class="btn btn-secondary">Lihat Portofolio</a>
+            </div>
+          </div>
+        </article>
+
+        <aside class="about-aside" aria-label="Informasi tambahan">
+          <h2 class="sub-heading">Tentang Saya</h2>
+          <p>
+            Saya mahasiswa Sistem Informasi yang tertarik pada pengembangan web modern
+            dan pengalaman pengguna. Saya percaya kode yang bersih dan struktur semantik
+            adalah fondasi dari web yang baik.
+          </p>
+
+          <h2 class="sub-heading">Alur Kerja Proyek Saya</h2>
+          <ol class="workflow-list">
+            <li>Menentukan kebutuhan dan struktur konten</li>
+            <li>Menyusun HTML semantik terlebih dahulu</li>
+            <li>Menata visual dengan CSS modern</li>
+            <li>Menguji aksesibilitas &amp; responsivitas</li>
+            <li>Deploy ke GitHub Pages</li>
+          </ol>
+
+          <div class="stats-box">
+            <div class="stat">
+              <span class="stat-num">12</span>
+              <span class="stat-label">Proyek</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3.8</span>
+              <span class="stat-label">IPK</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Accessible</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 2: PORTOFOLIO & CAPAIAN
+         ====================================================== -->
+    <section id="portofolio" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Portofolio &amp; Capaian</h2>
+        <p class="section-desc">Riwayat proyek dan matakuliah yang telah saya kerjakan.</p>
+
+        <div class="table-scroll">
+          <table class="data-table">
+            <caption>Riwayat Proyek dan Matakuliah Terkait</caption>
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Nama Proyek</th>
+                <th scope="col">Matakuliah</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Website Portofolio Pribadi</td>
+                <td>Pemrograman &amp; Pengujian Aplikasi Web</td>
+                <td><span class="pill pill-done">Selesai</span></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Sistem Manajemen Perpustakaan Mini</td>
+                <td>Basis Data</td>
+                <td><span class="pill pill-progress">Berjalan</span></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Landing Page UMKM Lokal</td>
+                <td>Desain Antarmuka Pengguna</td>
+                <td><span class="pill pill-done">Selesai</span></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>API Manajemen Inventaris</td>
+                <td>Pemrograman Berorientasi Objek</td>
+                <td><span class="pill pill-plan">Rencana</span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">Total Proyek</td>
+                <td>4</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <h3 class="sub-heading">Teknologi yang Dikuasai</h3>
+        <ul class="tech-badges">
+          <li class="badge badge-blue">HTML5</li>
+          <li class="badge badge-green">CSS3</li>
+          <li class="badge badge-orange">JavaScript</li>
+          <li class="badge badge-purple">Git</li>
+          <li class="badge badge-blue">Responsive Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 3: KONTAK & KONSULTASI (Formulir)
+         ====================================================== -->
+    <section id="kontak" class="section">
+      <div class="container">
+        <h2 class="section-title">Kontak &amp; Konsultasi</h2>
+        <p class="section-desc">
+          Ingin berdiskusi soal proyek web? Isi formulir di bawah, saya akan membalas secepatnya.
+        </p>
+
+        <form class="contact-form" action="#" method="POST" novalidate>
+
+          <fieldset class="form-fieldset">
+            <legend>Data Identitas</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nama">Nama Lengkap <span class="req" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  required
+                  placeholder="Contoh: Budi Santoso"
+                  aria-describedby="nama-help">
+                <small id="nama-help" class="form-help">Gunakan nama sesuai identitas resmi.</small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Kampus <span class="req" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="nama@del.ac.id"
+                  aria-describedby="email-help">
+                <small id="email-help" class="form-help">Gunakan email institusi untuk verifikasi.</small>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telepon">Nomor Telepon / WhatsApp</label>
+                <input
+                  type="tel"
+                  id="telepon"
+                  name="telepon"
+                  placeholder="08xxxxxxxxxx"
+                  pattern="[0-9]{10,13}"
+                  aria-describedby="telepon-help">
+                <small id="telepon-help" class="form-help">Contoh: 081234567890 (tanpa spasi).</small>
+              </div>
+
+              <div class="form-group">
+                <label for="anggaran">Estimasi Anggaran (Rp, ribuan)</label>
+                <input
+                  type="number"
+                  id="anggaran"
+                  name="anggaran"
+                  min="0"
+                  step="50"
+                  placeholder="Contoh: 500">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend>Detail Kebutuhan</legend>
+
+            <div class="form-group">
+              <label for="kategori">Kategori Proyek</label>
+              <select id="kategori" name="kategori">
+                <option value="landing-page">Landing Page</option>
+                <option value="portofolio">Website Portofolio</option>
+                <option value="toko-online">Toko Online Sederhana</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <fieldset class="form-fieldset nested">
+              <legend>Jenis Layanan</legend>
+              <div class="choice-group" role="radiogroup" aria-label="Pilihan jenis layanan">
+                <label class="choice-item">
+                  <input type="radio" name="layanan" value="desain-baru" checked>
+                  Desain Baru
+                </label>
+                <label class="choice-item">
+                  <input type="radio" name="layanan" value="revisi">
+                  Revisi Desain
+                </label>
+                <label class="choice-item">
+                  <input type="radio" name="layanan" value="konsultasi">
+                  Konsultasi Saja
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-fieldset nested">
+              <legend>Fitur Tambahan (opsional)</legend>
+              <div class="choice-group">
+                <label class="choice-item">
+                  <input type="checkbox" name="fitur" value="animasi">
+                  Animasi &amp; Transisi
+                </label>
+                <label class="choice-item">
+                  <input type="checkbox" name="fitur" value="form-kontak">
+                  Formulir Kontak
+                </label>
+                <label class="choice-item">
+                  <input type="checkbox" name="fitur" value="dark-mode">
+                  Dark Mode
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="pesan">Deskripsi Kebutuhan <span class="req" aria-hidden="true">*</span></label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="4"
+                required
+                placeholder="Ceritakan kebutuhan proyek kamu di sini..."
+                aria-describedby="pesan-help"></textarea>
+              <small id="pesan-help" class="form-help">Minimal jelaskan tujuan dan target pengguna website.</small>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn-submit">Kirim Permintaan Konsultasi</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Enjel Ayuti Napitupulu. Dibuat dengan HTML5 &amp; CSS3.</p>
+      <nav aria-label="Tautan sosial">
+        <ul class="footer-nav">
+          <li><a href="https://github.com/EnjelNapitupulu" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="mailto:iss24056@del.ac.id">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
