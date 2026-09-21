@@ -57,12 +57,9 @@ Lalu aktifkan di GitHub: **Settings → Pages → Branch: main → Save**
 
 ## Live Demo
 
-https://USERNAME_KAMU.github.io/ppw-2026-week2-NIM/
+https://EnjelNapitupulu.github.io/ppw-2026-week2-12S24056/
 
-## Screenshot
-
-*(Tambahkan screenshot tampilan halaman di sini setelah selesai styling)*
 
 ## Penulis
 
-[Nama Kamu] - [NIM] - Sistem Informasi, Institut Teknologi Del
+Enjel Ayuti napitupulu - 12S24056 - Sistem Informasi, Institut Teknologi Del
