@@ -1,0 +1,346 @@
+/* ==================================================================
+   CUSTOM STYLE OVERRIDES
+   Dimuat SETELAH Bootstrap 5, supaya bisa menimpa gaya default-nya.
+   Tidak ada satupun !important yang dipakai di file ini.
+   ================================================================== */
+
+/* ------------------------------------------------------------------
+   1. CSS CUSTOM PROPERTIES (Variables) — minimal 6 wajib, ini ada 10+
+   Palet warna personal: coklat tua & cream (bukan template polos)
+   ------------------------------------------------------------------ */
+:root {
+  --brand-bg: #f5efe6;          /* latar cream lembut */
+  --brand-surface: #fffaf3;     /* permukaan kartu */
+  --brand-text: #3e2723;        /* teks coklat tua */
+  --brand-text-soft: #7b5e57;   /* teks sekunder */
+  --brand-border: #dcc9b0;      /* pembatas tan lembut */
+
+  --brand-accent: #6f4e37;      /* aksen coklat kopi (dipakai tombol utama) */
+  --brand-accent-dark: #4e342e;
+  --brand-accent-light: #e9dcc8;
+
+  --card-radius: 14px;
+  --shadow-lift: 0 10px 20px -3px rgba(62, 39, 35, 0.12);
+}
+
+/* ------------------------------------------------------------------
+   2. RESET RINGAN & TIPOGRAFI
+   ------------------------------------------------------------------ */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--brand-bg);
+  color: var(--brand-text);
+  line-height: 1.6;
+}
+
+/* Fokus keyboard yang jelas untuk aksesibilitas */
+a:focus-visible,
+button:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible {
+  outline: 3px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------------
+   3. NAVBAR — override warna default Bootstrap
+   ------------------------------------------------------------------ */
+.site-navbar {
+  background-color: var(--brand-accent-dark);
+}
+
+.text-brand-accent {
+  color: var(--brand-accent-light);
+}
+
+.navbar .nav-link {
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--brand-accent-light) !important; /* utilitas darurat: menimpa .navbar-dark .nav-link.active bawaan Bootstrap yang memakai rgba tetap */
+}
+
+/* ------------------------------------------------------------------
+   4. HERO SECTION
+   ------------------------------------------------------------------ */
+.hero-section {
+  background: linear-gradient(135deg, #4e342e 0%, #8d6e63 55%, #d7ccc8 100%);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-eyebrow {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 0.9rem;
+}
+
+/* ------------------------------------------------------------------
+   5. TOMBOL KUSTOM (menimpa .btn-primary bawaan Bootstrap)
+   ------------------------------------------------------------------ */
+.btn-brand {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #ffffff;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-accent-dark);
+  border-color: var(--brand-accent-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
+
+.btn-outline-brand {
+  color: var(--brand-accent);
+  border-color: var(--brand-border);
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-brand:hover {
+  background-color: var(--brand-accent-light);
+  border-color: var(--brand-accent);
+  color: var(--brand-accent-dark);
+  transform: translateY(-2px);
+}
+
+/* ------------------------------------------------------------------
+   6. PROFILE CARD (Section Tentang Saya)
+   ------------------------------------------------------------------ */
+.profile-card,
+.about-aside {
+  background-color: var(--brand-surface);
+  border-radius: var(--card-radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.card-banner {
+  height: 110px;
+  background: linear-gradient(135deg, #4e342e 0%, #a1887f 100%);
+  border-top-left-radius: var(--card-radius);
+  border-top-right-radius: var(--card-radius);
+}
+
+.avatar-wrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid var(--brand-surface);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: 2px;
+  right: -4px;
+  background-color: #6a994e;
+  color: #ffffff;
+  font-size: 0.65rem;
+  border: 2px solid var(--brand-surface);
+}
+
+.sub-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--brand-text-soft);
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-badge {
+  background-color: var(--brand-bg);
+  color: var(--brand-text);
+  border: 1px solid var(--brand-border);
+  font-weight: 600;
+  font-size: 0.72rem;
+  padding: 0.4rem 0.7rem;
+  transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: var(--brand-accent-light);
+  color: var(--brand-accent-dark);
+}
+
+.stats-box {
+  background-color: var(--brand-bg);
+  border: 1px solid var(--brand-border);
+}
+
+/* ------------------------------------------------------------------
+   7. SECTION ALT BACKGROUND
+   ------------------------------------------------------------------ */
+.section-alt {
+  background-color: var(--brand-surface);
+}
+
+/* ------------------------------------------------------------------
+   8. PORTOFOLIO CARDS — kombinator & pseudo-class lanjutan
+   ------------------------------------------------------------------ */
+.project-card {
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  background-color: var(--brand-surface);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Adjacent sibling combinator: beri jarak ekstra antar baris kartu saat wrap */
+.project-card + .project-card {
+  margin-top: 0;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+}
+
+.project-banner {
+  height: 90px;
+}
+
+.banner-1 { background: linear-gradient(135deg, #6f4e37, #a1887f); }
+.banner-2 { background: linear-gradient(135deg, #7d8471, #a3b18a); }
+.banner-3 { background: linear-gradient(135deg, #b5651d, #d4a373); }
+.banner-4 { background: linear-gradient(135deg, #4e342e, #8d6a63); }
+
+.tech-badge {
+  background-color: var(--brand-accent-light);
+  color: var(--brand-accent-dark);
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+/* nth-child: beri sedikit variasi radius pada kartu genap sebagai aksen visual halus */
+.project-card:nth-child(even) .project-banner {
+  border-radius: var(--card-radius) var(--card-radius) 4px 4px;
+}
+
+/* Child combinator: styling judul kartu yang merupakan anak langsung dari .card-body */
+.card-body > h3 {
+  color: var(--brand-text);
+}
+
+/* ------------------------------------------------------------------
+   9. MODAL
+   ------------------------------------------------------------------ */
+.modal-content {
+  border-radius: var(--card-radius);
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: var(--brand-border);
+}
+
+.modal-footer {
+  border-top-color: var(--brand-border);
+}
+
+/* ------------------------------------------------------------------
+   10. FORMULIR KONTAK — Floating Labels & Input Groups
+   ------------------------------------------------------------------ */
+.contact-form {
+  background-color: var(--brand-surface);
+  border-radius: var(--card-radius);
+}
+
+.fieldset-legend {
+  padding: 0;
+}
+
+.nested-fieldset {
+  border: 1px dashed var(--brand-border);
+}
+
+/* :focus-within — beri highlight pada fieldset saat salah satu inputnya fokus */
+.nested-fieldset:focus-within {
+  border-color: var(--brand-accent);
+  background-color: var(--brand-accent-light);
+}
+
+.form-control,
+.form-select {
+  border-color: var(--brand-border);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 0.2rem rgba(111, 78, 55, 0.18);
+}
+
+.form-check-input:checked {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+}
+
+.input-group-text {
+  background-color: var(--brand-accent-light);
+  color: var(--brand-accent-dark);
+  border-color: var(--brand-border);
+}
+
+/* Floating label warna teks saat aktif */
+.form-floating > label {
+  color: var(--brand-text-soft);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: var(--brand-accent);
+}
+
+/* ------------------------------------------------------------------
+   11. FOOTER
+   ------------------------------------------------------------------ */
+.site-footer {
+  background-color: var(--brand-accent-dark);
+  color: var(--brand-accent-light);
+}
+
+.footer-link {
+  color: var(--brand-accent-light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* ------------------------------------------------------------------
+   12. RESPONSIF TAMBAHAN (di luar breakpoint bawaan Bootstrap)
+   ------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem !important; /* utilitas darurat: menimpa padding inline Bootstrap p-md-5 di breakpoint kecil */
+  }
+}
