@@ -57,6 +57,15 @@ button:focus-visible,
   transition: color 0.2s ease;
 }
 
+/* Perjelas ikon hamburger supaya kontrasnya lebih tegas di background coklat */
+.navbar-toggler {
+  border-color: var(--brand-accent-light);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(233, 220, 200, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
   color: var(--brand-accent-light) !important; /* utilitas darurat: menimpa .navbar-dark .nav-link.active bawaan Bootstrap yang memakai rgba tetap */
