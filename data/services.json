@@ -1,0 +1,23 @@
+[
+  {
+    "id": "svc-001",
+    "name": "Landing Page Sederhana",
+    "price": "Mulai Rp500.000",
+    "description": "Satu halaman promosi dengan desain responsif, cocok untuk produk atau acara.",
+    "features": ["1 Halaman", "Desain Responsif", "Formulir Kontak"]
+  },
+  {
+    "id": "svc-002",
+    "name": "Website Portofolio",
+    "price": "Mulai Rp900.000",
+    "description": "Portofolio multi-section dengan tabel riwayat proyek dan galeri karya.",
+    "features": ["Hingga 4 Section", "Galeri Proyek", "Formulir Konsultasi", "SEO Dasar"]
+  },
+  {
+    "id": "svc-003",
+    "name": "Konsultasi Teknis",
+    "price": "Rp150.000/jam",
+    "description": "Sesi diskusi satu-satu seputar arsitektur web, struktur kode, atau debugging.",
+    "features": ["Durasi Fleksibel", "Review Kode", "Rekomendasi Perbaikan"]
+  }
+]

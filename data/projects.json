@@ -1,0 +1,42 @@
+[
+  {
+    "id": "proj-001",
+    "title": "Website Portofolio Pribadi",
+    "category": "frontend",
+    "description": "Halaman satu-halaman menampilkan profil, riwayat proyek dalam tabel semantik, dan formulir konsultasi yang accessible. Dibangun dengan HTML5 semantik dan dimodernisasi menggunakan Bootstrap 5.",
+    "thumbnail": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&auto=format&fit=crop&q=60",
+    "tags": ["HTML5", "CSS3", "Bootstrap 5"],
+    "link": "#",
+    "metrics": { "duration": "2 minggu", "role": "Solo Developer" }
+  },
+  {
+    "id": "proj-002",
+    "title": "Sistem Manajemen Perpustakaan Mini",
+    "category": "backend",
+    "description": "Aplikasi pencatat buku dan peminjaman sederhana, dibangun untuk mempelajari relasi antar tabel dalam basis data serta query dasar CRUD.",
+    "thumbnail": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=500&auto=format&fit=crop&q=60",
+    "tags": ["SQL", "PHP Dasar"],
+    "link": "#",
+    "metrics": { "duration": "3 minggu", "role": "Solo Developer" }
+  },
+  {
+    "id": "proj-003",
+    "title": "Landing Page UMKM Lokal",
+    "category": "frontend",
+    "description": "Desain antarmuka promosi produk UMKM dengan fokus konversi pengunjung, memakai prinsip hirarki visual dan call-to-action yang jelas.",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60",
+    "tags": ["UI/UX", "Figma"],
+    "link": "#",
+    "metrics": { "duration": "1 minggu", "role": "Solo Developer" }
+  },
+  {
+    "id": "proj-004",
+    "title": "API Manajemen Inventaris",
+    "category": "backend",
+    "description": "API sederhana untuk mengelola data inventaris barang berbasis konsep Pemrograman Berorientasi Objek, dengan endpoint CRUD standar.",
+    "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60",
+    "tags": ["OOP", "REST API"],
+    "link": "#",
+    "metrics": { "duration": "2 minggu", "role": "Solo Developer" }
+  }
+]

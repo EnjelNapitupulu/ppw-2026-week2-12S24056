@@ -1,0 +1,345 @@
+/* ==================================================================
+   CUSTOM STYLE OVERRIDES
+   Dimuat SETELAH Bootstrap 5, supaya bisa menimpa gaya default-nya.
+   ================================================================== */
+
+/* ------------------------------------------------------------------
+   1. CSS CUSTOM PROPERTIES (Variables)
+   Palet warna personal: coklat tua & cream
+   ------------------------------------------------------------------ */
+:root {
+  --brand-bg: #f5efe6;
+  --brand-surface: #fffaf3;
+  --brand-text: #3e2723;
+  --brand-text-soft: #7b5e57;
+  --brand-border: #dcc9b0;
+
+  --brand-accent: #6f4e37;
+  --brand-accent-dark: #4e342e;
+  --brand-accent-light: #e9dcc8;
+
+  --card-radius: 14px;
+  --shadow-lift: 0 10px 20px -3px rgba(62, 39, 35, 0.12);
+}
+
+/* ------------------------------------------------------------------
+   2. RESET RINGAN & TIPOGRAFI
+   ------------------------------------------------------------------ */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--brand-bg);
+  color: var(--brand-text);
+  line-height: 1.6;
+}
+
+a:focus-visible,
+button:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible {
+  outline: 3px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------------
+   3. NAVBAR
+   ------------------------------------------------------------------ */
+.site-navbar {
+  background-color: var(--brand-accent-dark);
+}
+
+.text-brand-accent {
+  color: var(--brand-accent-light);
+}
+
+.navbar .nav-link {
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--brand-accent-light) !important; /* utilitas darurat: menimpa .navbar-dark .nav-link.active bawaan Bootstrap yang memakai rgba tetap */
+}
+
+.navbar-toggler {
+  border-color: var(--brand-accent-light);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(233, 220, 200, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.order-badge {
+  font-size: 0.6rem;
+  margin-left: 4px;
+  vertical-align: top;
+}
+
+/* ------------------------------------------------------------------
+   4. HERO SECTION
+   ------------------------------------------------------------------ */
+.hero-section {
+  background: linear-gradient(135deg, #4e342e 0%, #8d6e63 55%, #d7ccc8 100%);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-eyebrow {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 0.9rem;
+}
+
+/* ------------------------------------------------------------------
+   5. TOMBOL KUSTOM
+   ------------------------------------------------------------------ */
+.btn-brand {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #ffffff;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-accent-dark);
+  border-color: var(--brand-accent-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
+
+.btn-outline-brand {
+  color: var(--brand-accent);
+  border-color: var(--brand-border);
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-brand:hover,
+.btn-outline-brand.active {
+  background-color: var(--brand-accent-light);
+  border-color: var(--brand-accent);
+  color: var(--brand-accent-dark);
+}
+
+/* ------------------------------------------------------------------
+   6. PROFILE CARD
+   ------------------------------------------------------------------ */
+.profile-card,
+.about-aside {
+  background-color: var(--brand-surface);
+  border-radius: var(--card-radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.card-banner {
+  height: 110px;
+  background: linear-gradient(135deg, #4e342e 0%, #a1887f 100%);
+  border-top-left-radius: var(--card-radius);
+  border-top-right-radius: var(--card-radius);
+}
+
+.avatar-wrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid var(--brand-surface);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: 2px;
+  right: -4px;
+  background-color: #6a994e;
+  color: #ffffff;
+  font-size: 0.65rem;
+  border: 2px solid var(--brand-surface);
+}
+
+.sub-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--brand-text-soft);
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-badge {
+  background-color: var(--brand-bg);
+  color: var(--brand-text);
+  border: 1px solid var(--brand-border);
+  font-weight: 600;
+  font-size: 0.72rem;
+  padding: 0.4rem 0.7rem;
+  transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: var(--brand-accent-light);
+  color: var(--brand-accent-dark);
+}
+
+.stats-box {
+  background-color: var(--brand-bg);
+  border: 1px solid var(--brand-border);
+}
+
+/* ------------------------------------------------------------------
+   7. SECTION ALT
+   ------------------------------------------------------------------ */
+.section-alt {
+  background-color: var(--brand-surface);
+}
+
+/* ------------------------------------------------------------------
+   8. PROJECT & SERVICE CARDS (dirender dinamis via JS)
+   ------------------------------------------------------------------ */
+.project-card,
+.service-card {
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  background-color: var(--brand-surface);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover,
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+}
+
+.project-thumb {
+  height: 140px;
+  object-fit: cover;
+}
+
+.tech-badge {
+  background-color: var(--brand-accent-light);
+  color: var(--brand-accent-dark);
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+/* Skeleton loading state */
+.placeholder-glow .placeholder {
+  background-color: var(--brand-border);
+}
+
+/* ------------------------------------------------------------------
+   9. MODAL
+   ------------------------------------------------------------------ */
+.modal-content {
+  border-radius: var(--card-radius);
+  border: none;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--brand-border);
+}
+
+/* ------------------------------------------------------------------
+   10. FORMULIR
+   ------------------------------------------------------------------ */
+.contact-form {
+  background-color: var(--brand-surface);
+  border-radius: var(--card-radius);
+}
+
+.fieldset-legend {
+  padding: 0;
+}
+
+.form-control,
+.form-select {
+  border-color: var(--brand-border);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 0.2rem rgba(111, 78, 55, 0.18);
+}
+
+.form-check-input:checked {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+}
+
+.input-group-text {
+  background-color: var(--brand-accent-light);
+  color: var(--brand-accent-dark);
+  border-color: var(--brand-border);
+}
+
+.form-floating > label {
+  color: var(--brand-text-soft);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: var(--brand-accent);
+}
+
+/* ------------------------------------------------------------------
+   11. TOAST NOTIFICATION
+   ------------------------------------------------------------------ */
+.toast {
+  border-radius: 10px;
+  border-color: var(--brand-border);
+}
+
+.toast-header {
+  background-color: var(--brand-accent-light);
+  color: var(--brand-accent-dark);
+}
+
+/* ------------------------------------------------------------------
+   12. FOOTER
+   ------------------------------------------------------------------ */
+.site-footer {
+  background-color: var(--brand-accent-dark);
+  color: var(--brand-accent-light);
+}
+
+.footer-link {
+  color: var(--brand-accent-light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* ------------------------------------------------------------------
+   13. RESPONSIF TAMBAHAN
+   ------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem !important; /* utilitas darurat: menimpa padding inline Bootstrap p-md-5 di breakpoint kecil */
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Enjel Ayuti Napitupulu",
+  "role": "Mahasiswa S1 Sistem Informasi — Web Developer",
+  "bio": "Antusias merancang antarmuka web modern, kode bersih, dan aksesibel bagi semua pengguna. Semester ini saya belajar mengintegrasikan arsitektur web kontemporer: Client-Side Rendering dan decoupled JSON data layer.",
+  "avatar": "photo.jpeg",
+  "status": "Aktif",
+  "skills": ["HTML5 Semantic", "Bootstrap 5", "JavaScript ES6+", "Fetch API", "Aksesibilitas"],
+  "workflow": [
+    "Menentukan kebutuhan & struktur konten",
+    "Menyusun HTML semantik sebagai shell",
+    "Merancang data layer JSON modular",
+    "Merender UI secara dinamis via Fetch API",
+    "Menguji performa jaringan & deploy ke GitHub Pages"
+  ],
+  "stats": {
+    "projects": 12,
+    "gpa": "3.8",
+    "accessible": "100%"
+  }
+}
